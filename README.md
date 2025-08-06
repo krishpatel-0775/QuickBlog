@@ -1,1 +1,2 @@
 # QuickBlog
+auther: krish patel
