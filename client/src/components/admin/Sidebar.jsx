@@ -38,7 +38,7 @@ const Sidebar = () => {
           }`
         }
       >
-        <img src={assets.add_icon} className="min-w-4 w-5" />
+        <img src={assets.list_icon} className="min-w-4 w-5" />
         <p className="hidden md:inline-block">Blog list</p>
       </NavLink>
 
