@@ -42,7 +42,7 @@ const Dashboard = () => {
         </div>
 
         <div className="flex items-center gap-4 bg-white p-4 min-w-58 rounded shadow cursor-pointer hover:scale-105 transition-all">
-          <img src={assets.dashboard_icon_2} alt="" />
+          <img src={assets.dashboard_icon_3} alt="" />
           <div>
             <p className="text-xl font-semibold text-gray-600">
               {dashboardData.drafts}

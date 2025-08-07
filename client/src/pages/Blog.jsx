@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { assets, blog_data, comments_data } from "../assets/assets";
 import Navbar from "../components/Navbar";
 import Moment from "moment";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 
 const Blog = () => {
@@ -43,21 +43,14 @@ const Blog = () => {
       <Navbar />
 
       <div className="text-center mt-20 text-gray-600">
-        <p className="py-4 font-medium" style={{ color: "#5044E5" }}>
+        <p className="py-4 font-medium text-primary">
           Published on {Moment(data.createdAt).format("MMMM Do YYYY")}
         </p>
         <h1 className="text-2xl sm:text-5xl font-semibold max-w-2xl mx-auto text-gray-800">
           {data.title}
         </h1>
         <h2 className="my-5 max-w-lg truncate mx-auto">{data.subTitle}</h2>
-        <p
-          className="inline-block py-1 px-4 rounded-full mb-6 border font-medium"
-          style={{
-            color: "#5044E5", // text-primary
-            backgroundColor: "rgba(80, 68, 229, 0.05)", // bg-primary/5
-            border: "1px solid rgba(80, 68, 229, 0.35)", // border-primary/35
-          }}
-        >
+        <p className="bg-primary/5 text-primary inline-block py-1 px-4 rounded-full mb-6 border border-primary/35  font-medium">
           Krish Patel
         </p>
       </div>
@@ -124,16 +117,17 @@ const Blog = () => {
           </form>
         </div>
 
-            {/* share button */}
-            <div className="my-24 max-w-3xl mx-auto">
-              <p className="font-semibold my-4">Share this article on social media</p>
-              <div className="flex">
-                <img src={assets.facebook_icon} width={50} />
-                <img src={assets.twitter_icon} width={50} />
-                <img src={assets.googleplus_icon} width={50} />
-              </div>
-            </div>
-
+        {/* share button */}
+        <div className="my-24 max-w-3xl mx-auto">
+          <p className="font-semibold my-4">
+            Share this article on social media
+          </p>
+          <div className="flex">
+            <img src={assets.facebook_icon} width={50} />
+            <img src={assets.twitter_icon} width={50} />
+            <img src={assets.googleplus_icon} width={50} />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

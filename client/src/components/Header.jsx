@@ -12,7 +12,7 @@ const Header = () => {
       </div>
 
       <h1 className="text-3xl text-center sm:text-6xl font-semibold sm:leading-16 text-gray-700">
-        Your own <span style={{ color: "#5044e5" }}>blogging</span> <br />
+        Your own <span className="text-primary">blogging</span> <br />
         platform.
       </h1>
 
@@ -31,8 +31,7 @@ const Header = () => {
         />
         <button
           type="submit"
-          className="text-white px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer"
-          style={{ backgroundColor: "#5044e5" }}
+          className="text-white bg-primary px-8 py-2 m-1.5 rounded hover:scale-105 transition-all cursor-pointer"
         >
           Search
         </button>

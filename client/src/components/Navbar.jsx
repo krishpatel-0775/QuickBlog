@@ -16,8 +16,7 @@ const Navbar = () => {
         />
         <button
           onClick={() => navigate("/admin")}
-          style={{ backgroundColor: "#5044e5" }}
-          className="flex items-center gap-2 rounded-full text-sm cursor-pointer text-white px-10 py-2.5"
+          className="flex items-center bg-primary gap-2 rounded-full text-sm cursor-pointer text-white px-10 py-2.5"
         >
           login <img src={assets.arrow} className="w-3" alt="arrow" />
         </button>
