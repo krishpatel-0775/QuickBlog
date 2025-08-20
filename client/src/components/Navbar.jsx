@@ -1,9 +1,11 @@
 import React from "react";
 import { assets } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
+import { useAppContext } from "../context/AppContext";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+
+  const {navigate, token} = useAppContext()
 
   return (
     <>
@@ -18,7 +20,7 @@ const Navbar = () => {
           onClick={() => navigate("/admin")}
           className="flex items-center bg-primary gap-2 rounded-full text-sm cursor-pointer text-white px-10 py-2.5"
         >
-          login <img src={assets.arrow} className="w-3" alt="arrow" />
+          {token ? 'Dashboard' : 'Login'} <img src={assets.arrow} className="w-3" alt="arrow" />
         </button>
       </div>
     </>
